@@ -21,7 +21,7 @@
 }
 
 .pre-loading h1 {
-    font-family: var(--FJR-font);
+    font-family: 'Impact';
     font-style: normal;
     font-size: 120px;
     line-height: 146px;
@@ -64,48 +64,60 @@
 }
 
 .container {
-    width: 1350px;
+    max-width: 1350px;
+    width: 100%;
     margin: 0 auto;
 }
 
-header {
+.wrapper {
     background-color: #313131;
-    padding-top: 40px;
+    background-image: url(../../img/bricks-u-head.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1200px;
+}
+
+header {
+
+    padding: 40px 0 60px 0;
 }
 
 header .pre-nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
     align-items: center;
-    justify-content: center;
     margin-bottom: 60px;
 }
 
 .pre-nav h1 {
-    font-family: var(--FJR-font);
+    font-family: 'Impact';
     font-style: normal;
     font-size: 68px;
     line-height: 83px;
     text-transform: uppercase;
     color: #F2A500;
+    justify-self: flex-end;
 }
 
 .pre-nav span {
     color: #FFF;
 }
 
-.pre-nav a {
-    position: absolute;
-    right: 12%;
-    font-family: 'Montserrat';
+.btn {
+    font-family: var(--MSB-font);
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
-    text-decoration: none;
     background: #EC7F00;
     border-radius: 20px;
-    padding: 18px 48px;
+    border: 0;
+}
+
+.request__btn {
+    padding: 18px 50px;
+    justify-self: flex-end;
 }
 
 nav .nav__list {
@@ -115,3 +127,81 @@ nav .nav__list {
     justify-content: center;
 }
 
+nav .nav__item-link {
+    font-family: var(--MSB-font);
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.hero__content h3 {
+    font-family: 'Impact';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 83px;
+    color: #FFFFFF;
+    margin-top: 140px;
+    margin-bottom: 20px;
+}
+
+.hero__content p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 86px;
+    max-width: 325px;
+    width: 100%;
+}
+
+.hero__content button {
+    margin-bottom: 180px;
+}
+
+.hero__content {
+    padding-top: 1px;
+    background-image: url(../../img/mainimg-u-head.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 1000px;
+}
+
+.pt-sec {
+    padding-top: 115px;
+}
+
+.first-section h2 {
+    font-family: 'Impact';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 68px;
+    text-align: center;
+    line-height: 83px;
+    color: #EC7F00;
+    margin-bottom: 45px;
+}
+
+.fs__block {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.fs__block--left li {
+    color: #EC7F00;
+    margin-left: 15px;
+}
+
+.fs__block--left p {
+    font-family: var(--MSB-font);
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 30px;
+}
